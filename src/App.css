@@ -3,16 +3,19 @@
   width: 100%;
 }
 
+/* flex centering styles */
 .flex-centered {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* search top bar styles */
 .App .App-Topbar {
   height: 40px;
+  min-width: 300px;
 
-  padding: 16px 0 16px 0;
+  padding: 16px 40px 16px 40px;
 }
 
 .App-Topbar input {
@@ -43,6 +46,7 @@
   padding: 7px;
 }
 
+/* main content area styles */
 .App-Main {
   width: 100%;
 
@@ -56,6 +60,7 @@
   padding: 2%;
 }
 
+/* video container styles */
 .video-container {
   width: 60%;
   height: 100%;
@@ -77,6 +82,7 @@
   font-weight: 500;
 }
 
+/* sidebar styles */
 .App-Main .App-Main-sidebar {
   width: auto;
   padding-left: 40px;
@@ -89,6 +95,7 @@
   display: flex;
 }
 
+/* side bar thumbnail styles */
 .thumbnail-wrapper {
   margin-right: 10px;
 }
@@ -103,6 +110,7 @@
   cursor: pointer;
 }
 
+/* spinner styles */
 .spinner {
   animation: rotate 2s linear infinite;
   z-index: 2;
@@ -120,6 +128,7 @@
   animation: dash 1.5s ease-in-out infinite;
 }
 
+/* spinner keyframes */
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
@@ -141,6 +150,7 @@
   }
 }
 
+/* media queries */
 @media (max-width: 1015px) {
   .App-Main .App-Main-content {
     flex-direction: column;

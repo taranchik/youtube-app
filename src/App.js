@@ -15,6 +15,7 @@ const App = () => {
 
     setIsLoading(true);
 
+    // fetching videos data from the youtube API
     await axios
       .get(
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${e.target.search.value}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
@@ -67,7 +68,6 @@ const App = () => {
               {selectedVideo && selectedVideo.snippet.title}
             </div>
           </figure>
-
           <div className="App-Main-sidebar">
             {videos.map((video, index) => (
               <div key={index} className="sidebar-video-container">
